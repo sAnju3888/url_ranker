@@ -1,0 +1,12 @@
+{
+    "manifest_version": 3,
+    "version": "1.0",
+    "name": "sites tracker1811",
+    "action": {
+        "default_popup": "index.html",
+        "default_icon": "folder.png"
+    },
+    "permissions": [
+        "tabs"
+    ]
+}
