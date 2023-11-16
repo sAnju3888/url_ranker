@@ -22,27 +22,26 @@ tabEl.addEventListener("click",function(){
         render(arr);
     })
 })
-function swap(i,j,array){
-    let temp = array[i];
-    array[i] = array[j];
-    array[j] = temp;
-}
+
 function insertion_sort(array){
-    console.log(array.length)
-    for(let i=1;i<=array.length;i++){
+    
+    for(let i=1;i<array.length;i++){
         let curr  = i;
         while (curr!=0){
-            swap(curr,curr-1,array);
+            var temp = array[curr];
+
+            [array[curr], array[curr-1]] = [array[curr-1], array[curr]];
             curr -= 1;
         }
 
     }
     
+    
 }
 function render(array){
     let items = ""
     if (array.length>1){
-        //insertion_sort(array);
+        insertion_sort(array);
     }
     for(let i=0;i<array.length;i++){
         if (array[i]==""){
