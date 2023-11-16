@@ -50,7 +50,7 @@ function render(array){
         }
         items += `
         <li>
-              <a target="_blank" href="${array[i]}">${array[i]}
+            <span>${i} ) </span>   <a target="_blank" href="${array[i]}">${array[i]}
               </a>
 
         </li>
